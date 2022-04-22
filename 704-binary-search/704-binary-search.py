@@ -13,6 +13,7 @@ class Solution:
             return -1
         
         mid = (left + right) // 2
+        
         if nums[mid] == target:
             return mid
         elif (nums[mid] < target):
@@ -21,6 +22,3 @@ class Solution:
         else:
             # cut off top half
             return self.helper(left, mid-1, nums, target)
-                 
-        # it isn't there    
-        return -1
