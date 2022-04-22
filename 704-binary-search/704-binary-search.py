@@ -1,9 +1,8 @@
 class Solution:
+    
     def search(self, nums: List[int], target: int) -> int:
-        for n in nums:
-            if n == target:
-                return nums.index(n)
+        
+        if target in nums:
+            return nums.index(target)
         
         return -1
-            
-        
