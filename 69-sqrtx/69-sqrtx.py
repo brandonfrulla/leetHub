@@ -1,3 +1,7 @@
 class Solution:
     def mySqrt(self, x: int) -> int:
-        return int(x ** .5)
+        r = x
+        
+        while r*r > x:
+            r = int((r + x/r) / 2)
+        return r
