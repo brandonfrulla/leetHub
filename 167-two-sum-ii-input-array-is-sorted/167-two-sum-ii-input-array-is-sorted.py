@@ -10,4 +10,3 @@ class Solution:
                 
             #nums[i] is not in the solution
             trash.append(numbers[i])
-            
