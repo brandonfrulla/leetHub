@@ -3,7 +3,6 @@ class Solution:
     
         i = 0
         k = len(numbers) - 1
-        trash = []
         
         while i < len(numbers) - 1:
             if numbers[i] + numbers[k] == target:
