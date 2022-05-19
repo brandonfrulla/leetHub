@@ -6,12 +6,11 @@ class Solution:
         l2 = [num for num in nums if num != 0]
         
         i = 0
-        while i < len(l2):
-            nums[i] = l2[i]
+        while i < len(nums):
+            if i < len(l2):
+                nums[i] = l2[i]
+            else:
+                nums[i] = 0
             i += 1
             
-        i = len(l2)
-        while i < len(nums):
-            nums[i] = 0
-            i += 1
             
