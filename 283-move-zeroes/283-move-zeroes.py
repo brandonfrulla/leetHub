@@ -3,7 +3,6 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        l1 = [num for num in nums if num == 0]
         l2 = [num for num in nums if num != 0]
         
         i = 0
