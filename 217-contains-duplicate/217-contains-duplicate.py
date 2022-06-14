@@ -1,6 +1,3 @@
 class Solution:
-    def containsDuplicate(self, nums: List[int]) -> bool:
-        a = len(nums)
-        b = len(set(nums))
-        
-        return a != b
+    def containsDuplicate(self, nums: List[int]) -> bool:        
+        return len(nums) != len(set(nums))
